@@ -70,24 +70,6 @@ torchrun --nproc_per_node=8 train_v2.py configs/wf42m_pfc03_40epoch_8gpu_vit_b
 - [https://github.com/qxzheng/CatFace/wiki] (610 IDs, 7112 images)
 - [Your Dataset, Click Here!](docs/prepare_custom_dataset.md)
 
-Note: 
-If you want to use DALI for data reading, please use the script 'scripts/shuffle_rec.py' to shuffle the InsightFace style rec before using it.  
-Example:
-
-`python scripts/shuffle_rec.py ms1m-retinaface-t1`
-
-You will get the "shuffled_ms1m-retinaface-t1" folder, where the samples in the "train.rec" file are shuffled.
-
-
-
-### Performance on IJB-C and [**ICCV2021-MFR**](https://github.com/deepinsight/insightface/blob/master/challenges/mfr/README.md)
-
-ICCV2021-MFR testset consists of non-celebrities so we can ensure that it has very few overlap with public available face 
-recognition training set, such as MS1M and CASIA as they mostly collected from online celebrities. 
-As the result, we can evaluate the FAIR performance for different algorithms.  
-
-For **ICCV2021-MFR-ALL** set, TAR is measured on all-to-all 1:1 protocal, with FAR less than 0.000001(e-6). The 
-globalised multi-racial testset contains 242,143 identities and 1,624,305 images. 
 
 
 

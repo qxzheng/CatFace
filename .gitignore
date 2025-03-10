@@ -1,6 +1,7 @@
 # Ignore specific files
 *.onnx
 *.zip
+*.pt
 # Ignore all __pycache__ directories
 __pycache__/
 backbones/__pycache__/
