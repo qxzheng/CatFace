@@ -1,0 +1,34 @@
+# Ignore specific files
+*.onnx
+*.zip
+# Ignore all __pycache__ directories
+__pycache__/
+backbones/__pycache__/
+configs/__pycache__/
+eval/__pycache__/
+utils/__pycache__/
+
+# Ignore specific Python files in backbones and configs
+#backbones/vit_031061_final.py
+#backbones/vit_0608fft_final.py
+#backbones/vit_1channel_mask.py
+#backbones/vit_FFT095100tranable_final.py
+#configs/ms1mv2_r100_catface.py
+#configs/ms1mv2_r50_catface.py
+#configs/wf42m_pfc03_40epoch_64gpu_vit_l_catface.py~
+
+# Ignore CSV files
+#filtered2w_new_pairs.csv
+#filtered2w_pairs.csv
+
+# Ignore specific directories and files
+#generateNewCSV.py
+#get_feature.zip
+#get_feature/
+output_images/
+petface_combine_before_20240802_align_112_0/
+report_dynamo_export.sarif
+save_directory/
+#static_var.json
+work_dirs/
+
